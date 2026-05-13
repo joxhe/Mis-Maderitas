@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    background-color: white;
+    color: #111827;
+  }
+}
