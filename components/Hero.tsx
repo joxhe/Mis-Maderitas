@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Hero() {
   return (
     <section className="min-h-screen pt-20 flex items-center">
@@ -15,12 +17,18 @@ export default function Hero() {
             Transformamos residuos industriales en piezas únicas que aportan calidez y diseño consciente a tu hogar.
           </p>
           <div className="flex gap-4 mt-2">
-            <button className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900 transition-colors">
+            <Link
+              href="/catalogo"
+              className="bg-green-800 text-white px-6 py-3 rounded-md hover:bg-green-900 transition-colors"
+            >
               Ver Catálogo
-            </button>
-            <button className="border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:border-green-800 hover:text-green-800 transition-colors">
+            </Link>
+            <Link
+              href="/historia"
+              className="border border-gray-300 text-gray-700 px-6 py-3 rounded-md hover:border-green-800 hover:text-green-800 transition-colors"
+            >
               Nuestra Historia
-            </button>
+            </Link>
           </div>
         </div>
 
